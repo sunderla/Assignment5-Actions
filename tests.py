@@ -21,7 +21,7 @@ class TestCase(unittest.TestCase):
 
     def test5(self):
         expected = (7, 3)
-        self.assertEqual(expected, task.firstLast([7,6,5,4,3]))
+        self.assertEqual(expected, task.firstLast([7, 6, 5, 4, 3]))
 
 
 if __name__ == '__main__':
