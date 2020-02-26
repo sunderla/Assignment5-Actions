@@ -19,6 +19,10 @@ class TestCase(unittest.TestCase):
         expected = 4
         self.assertNotEqual(expected, task.circleArea(4))
 
+    def test5(self):
+        expected = (7, 3)
+        self.assertEqual(expected, task.firstLast([7,6,5,4,3]))
+
 
 if __name__ == '__main__':
     unittest.main()
