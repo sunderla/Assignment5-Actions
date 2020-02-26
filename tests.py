@@ -1,5 +1,6 @@
 import unittest
 import task
+import datetime
 
 
 class TestCase(unittest.TestCase):
@@ -22,6 +23,10 @@ class TestCase(unittest.TestCase):
     def test5(self):
         expected = (7, 3)
         self.assertEqual(expected, task.firstLast([7, 6, 5, 4, 3]))
+
+    def test6(self):
+        expected = datetime.timedelta(days=186)
+        self.assertEqual(expected, task.timeBetween((2020, 5, 17), (2019, 11, 13)))
 
 
 if __name__ == '__main__':
